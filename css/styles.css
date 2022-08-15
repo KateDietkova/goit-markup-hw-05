@@ -156,17 +156,22 @@ img {
 
 .current {
     color: var(--accent-color);
+    position: relative;
 }
 
-.page-current {
+/* .page-current {
     display: flex;
     flex-direction: column;
-}
-.page-current::after {
+} */
+.current::after {
     content: "";
     display: inline-block;
 
-    width: 48px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
     height: 4px;
     border-radius: 2px;
 
@@ -612,10 +617,6 @@ img {
 }
 
 /* Portfolio list */
-
-.portfolio-page-underline::after {
-    width: 78px;
-}
 
 .portfolio-list {
     display: flex;
