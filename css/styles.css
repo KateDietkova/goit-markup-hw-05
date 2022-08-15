@@ -165,7 +165,6 @@ img {
 .page-current::after {
     content: "";
     display: inline-block;
-    align-self: center;
 
     width: 48px;
     height: 4px;
@@ -613,6 +612,10 @@ img {
 }
 
 /* Portfolio list */
+
+.portfolio-page-underline::after {
+    width: 78px;
+}
 
 .portfolio-list {
     display: flex;
